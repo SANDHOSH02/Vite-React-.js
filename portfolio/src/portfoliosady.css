@@ -4,20 +4,20 @@ body {
     font-family: "Exo 2", sans-serif;
     margin: 0;
     padding: 0;
-    scroll-behavior: smooth; /* Enables smooth scrolling */
-    background: linear-gradient(to bottom right, #4a148c, #000000, #00bcd4, #121212); /* Gradient with violet, black, cyan, and dark color */
+    scroll-behavior: smooth; 
+    background: linear-gradient(to bottom right, #4a148c, #000000, #00bcd4, #121212); 
     color: white;
 }
 
 header {
     position: fixed;
     width: 100%;
-    background: rgba(33, 33, 33, 0.8); /* Semi-transparent dark background */
-    color: white;
+    background: rgba(33, 33, 33, 0.8);
     padding: 10px 0;
     text-align: center;
     z-index: 1000;
 }
+
 
 header nav ul {
     list-style: none;
@@ -35,33 +35,40 @@ header nav ul li a {
     color: white;
     text-decoration: none;
     font-weight: bold;
+    transition: color 0.3s ease;
 }
+
+
+header nav ul li a:hover {
+    color: orangered; 
+}
+
 
 .section {
     padding: 100px 20px;
     min-height: 100vh;
-    background: rgba(0, 0, 0, 0.7); /* Semi-transparent black background for sections */
-    border-bottom: 1px solid #333; /* Optional: to visually separate sections */
+    background: rgba(0, 0, 0, 0.7); 
+    border-bottom: 1px solid #333; 
 }
 
 #about {
-    background: rgba(0, 0, 0, 0.7); /* Dark background */
+    background: rgba(0, 0, 0, 0.7); 
 }
 
 #skills {
-    background: rgba(0, 0, 0, 0.7); /* Dark background */
+    background: rgba(0, 0, 0, 0.7); 
 }
 
 #projects {
-    background: rgba(0, 0, 0, 0.7); /* Dark background */
+    background: rgba(0, 0, 0, 0.7); 
 }
 
 #contact {
-    background: rgba(0, 0, 0, 0.7); /* Dark background */
+    background: rgba(0, 0, 0, 0.7); 
 }
 
 footer {
-    background: rgba(33, 33, 33, 0.8); /* Semi-transparent dark background */
+    background: rgba(33, 33, 33, 0.8);
     color: white;
     text-align: center;
     padding: 20px;
