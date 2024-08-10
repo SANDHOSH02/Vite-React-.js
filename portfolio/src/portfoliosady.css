@@ -5,12 +5,14 @@ body {
     margin: 0;
     padding: 0;
     scroll-behavior: smooth; /* Enables smooth scrolling */
+    background: linear-gradient(to bottom right, #4a148c, #000000, #00bcd4, #121212); /* Gradient with violet, black, cyan, and dark color */
+    color: white;
 }
 
 header {
     position: fixed;
     width: 100%;
-    background-color: #333;
+    background: rgba(33, 33, 33, 0.8); /* Semi-transparent dark background */
     color: white;
     padding: 10px 0;
     text-align: center;
@@ -38,34 +40,32 @@ header nav ul li a {
 .section {
     padding: 100px 20px;
     min-height: 100vh;
+    background: rgba(0, 0, 0, 0.7); /* Semi-transparent black background for sections */
+    border-bottom: 1px solid #333; /* Optional: to visually separate sections */
 }
 
 #about {
-    background-color: #f4f4f4;
+    background: rgba(0, 0, 0, 0.7); /* Dark background */
 }
 
 #skills {
-    background-color: #e0e0e0;
+    background: rgba(0, 0, 0, 0.7); /* Dark background */
 }
 
 #projects {
-    background-color: #cccccc;
+    background: rgba(0, 0, 0, 0.7); /* Dark background */
 }
 
 #contact {
-    background-color: #b0b0b0;
+    background: rgba(0, 0, 0, 0.7); /* Dark background */
 }
 
 footer {
-    background-color: #333;
+    background: rgba(33, 33, 33, 0.8); /* Semi-transparent dark background */
     color: white;
     text-align: center;
     padding: 20px;
     position: relative;
     bottom: 0;
     width: 100%;
-}
-
-main {
-    padding-top: 60px; /* To offset the fixed header */
 }
