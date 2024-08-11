@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import './portfoliosady.css'; 
+import './portfoliosady.css'; // Ensure this CSS file contains the necessary styles
 
 const skillsData = [
   { name: 'HTML', imgSrc: '/src/assets/html.png' },
@@ -44,8 +44,11 @@ const PortfolioSady = () => {
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#resume">Resume</a></li>
                 <li>
-                  <button onClick={() => setIsDarkMode(!isDarkMode)}>
-                    {isDarkMode ? 'Light' : 'Dark'}
+                  <button
+                    className="toggle-button"
+                    onClick={() => setIsDarkMode(!isDarkMode)}
+                  >
+                    {isDarkMode ? '🌙' : '☀️'}
                   </button>
                 </li>
               </ul>

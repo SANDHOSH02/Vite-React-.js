@@ -6,7 +6,7 @@
     --highlight-color: #ff6f61; /* Update to a more visually appealing highlight color */
     --bar-background: #ddd;
     --bar-fill: #ff6f61;
-    --bar-fill-hover: #ff3b30;
+    --bar-fill-hover: #137e73;
 }
 
 body {
@@ -364,9 +364,25 @@ body {
   transition: background-color 0.3s, color 0.3s;
 }
 
-
-button{
-
+.toggle-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: black;
   color: white;
-  background-color: #000000;
+  border: none;
+  border-radius: 50%;
+  padding: 10px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.toggle-button:hover {
+  background-color: #ffffff;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 100px;
 }
