@@ -24,12 +24,14 @@
    ```bash
    git clone https://github.com/your-username/PortfolioSandhosh.git
 ## License
-- **This project is licensed under the MIT License. See the LICENSE file for details.
 
-##Contact
- - **For any inquiries, you can reach me at:
+**This project is licensed under the MIT License.** See the [LICENSE](LICENSE) file for details.
 
--** Email**: your-email@example.com
--**GitHub**: SANDHOSH02
--**LinkedIn**: Sandhosh G
--**LeetCode**: Santhosh Gowravan
+## Contact
+
+For any inquiries, you can reach me at:
+
+- **Email:** your-email@example.com
+- **GitHub:** [SANDHOSH02](https://github.com/SANDHOSH02)
+- **LinkedIn:** [Sandhosh G](https://www.linkedin.com/in/sandhosh-g-884b7b279)
+- **LeetCode:** [Santhosh Gowravan](https://leetcode.com/u/santhoshgowravan/)
