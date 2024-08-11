@@ -23,37 +23,13 @@
 
    ```bash
    git clone https://github.com/your-username/PortfolioSandhosh.git
+## License
+- **This project is licensed under the MIT License. See the LICENSE file for details.
 
-2 . **Navigate to the Project Directory:** 
+##Contact
+ - **For any inquiries, you can reach me at:
 
-   ```bash
-   cd PortfolioSandhosh
-
-3. **Install Dependencies:**
-
-   ```npm install
-4. **Start the Development Server:**
-
-   ``` npm run dev
-
-#Open your browser and visit http://localhost:3000 to view the portfolio.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+-** Email**: your-email@example.com
+-**GitHub**: SANDHOSH02
+-**LinkedIn**: Sandhosh G
+-**LeetCode**: Santhosh Gowravan
