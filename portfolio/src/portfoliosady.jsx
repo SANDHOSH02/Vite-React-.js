@@ -10,18 +10,23 @@ const skillsData = [
   { name: 'Machine Learning', imgSrc: '/src/assets/ml.png' },
   { name: 'GitHub', imgSrc: '/src/assets/github.png' },
   { name: 'LeetCode', imgSrc: '/src/assets/leetcode.png' },
-  {name: 'MySql', imgSrc:'/src/assets/Mysql.png'},
-  {name: 'Php', imgSrc:'/src/assets/Php.png'}
+  { name: 'MySql', imgSrc: '/src/assets/mysql.png' },
+  { name: 'Php', imgSrc: '/src/assets/php.png' }
 ];
 
 const PortfolioSady = () => {
   const [showIntro, setShowIntro] = useState(true);
   const [showCard, setShowCard] = useState(false);
+  const [isDarkMode, setIsDarkMode] = useState(false);
 
   useEffect(() => {
     const timer = setTimeout(() => setShowIntro(false), 3000);
     return () => clearTimeout(timer);
   }, []);
+
+  useEffect(() => {
+    document.documentElement.setAttribute('data-theme', isDarkMode ? 'dark' : 'light');
+  }, [isDarkMode]);
 
   return (
     <>
@@ -38,6 +43,11 @@ const PortfolioSady = () => {
                 <li><a href="#skills">Skills</a></li>
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#resume">Resume</a></li>
+                <li>
+                  <button onClick={() => setIsDarkMode(!isDarkMode)}>
+                    {isDarkMode ? 'Light' : 'Dark'}
+                  </button>
+                </li>
               </ul>
             </nav>
           </header>
