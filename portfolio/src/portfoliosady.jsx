@@ -57,7 +57,7 @@ const PortfolioSady = () => {
 
           <section id="skills" className="section">
             <h1>Skills</h1>
-            <p>As a technical enthusiast, I am skilled in a variety of technologies:</p>
+            
             <div className="skills-container">
               {skillsData.map(skill => (
                 <div key={skill.name} className="skill-card">
