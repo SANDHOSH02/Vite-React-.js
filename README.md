@@ -23,3 +23,37 @@
 
    ```bash
    git clone https://github.com/your-username/PortfolioSandhosh.git
+
+2 . **Navigate to the Project Directory:** 
+
+   ```bash
+   cd PortfolioSandhosh
+
+3. **Install Dependencies:**
+
+   ```npm install
+4. **Start the Development Server:**
+
+   ``` npm run dev
+
+#Open your browser and visit http://localhost:3000 to view the portfolio.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
