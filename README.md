@@ -31,7 +31,7 @@
 
 For any inquiries, you can reach me at:
 
-- **Email:** your-email@example.com
+- **Email:** sandhoshtechie02@gmail.com
 - **GitHub:** [SANDHOSH02](https://github.com/SANDHOSH02)
 - **LinkedIn:** [Sandhosh G](https://www.linkedin.com/in/sandhosh-g-884b7b279)
 - **LeetCode:** [Santhosh Gowravan](https://leetcode.com/u/santhoshgowravan/)
