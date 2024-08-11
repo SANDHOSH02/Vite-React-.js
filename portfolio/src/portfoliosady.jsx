@@ -95,9 +95,9 @@ const PortfolioSady = () => {
             </div>
           </section>
 
-          <section id="contact" className="section">
-            <h1>Contact</h1>
-            <p>This is the Contact section.</p>
+          <section id="Resume" className="section">
+            <h1>Resume</h1>
+            
           </section>  
 
           <footer>
