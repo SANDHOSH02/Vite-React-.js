@@ -1,3 +1,4 @@
+
 @import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Foldit:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
 body {
@@ -5,19 +6,29 @@ body {
     margin: 0;
     padding: 0;
     scroll-behavior: smooth; 
-    background: linear-gradient(to bottom right, #4a148c, #000000, #00bcd4, #121212); 
-    color: white;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+
+body.dark-theme {
+    --background-color: #000000;
+    --text-color: white;
+}
+
+body.light-theme {
+    --background-color: #ffffff;
+    --text-color: black;
 }
 
 header {
     position: fixed;
     width: 100%;
-    background: rgba(33, 33, 33, 0.8);
-    padding: 10px 0;
+    padding: 20px 0;
     text-align: center;
     z-index: 1000;
 }
-
 
 header nav ul {
     list-style: none;
@@ -32,47 +43,96 @@ header nav ul li {
 }
 
 header nav ul li a {
-    color: white;
+    color: var(--text-color);
     text-decoration: none;
     font-weight: bold;
     transition: color 0.3s ease;
 }
 
-
 header nav ul li a:hover {
     color: orangered; 
 }
 
+.intro {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    text-align: center;
+    animation: fadeOut 3s forwards;
+    opacity: 1;
+}
+
+@keyframes fadeOut {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+        visibility: hidden;
+    }
+}
 
 .section {
     padding: 100px 20px;
     min-height: 100vh;
-    background: rgba(0, 0, 0, 0.7); 
+    background-color: var(--background-color);
     border-bottom: 1px solid #333; 
 }
 
-#about {
-    background: rgba(0, 0, 0, 0.7); 
-}
-
-#skills {
-    background: rgba(0, 0, 0, 0.7); 
-}
-
-#projects {
-    background: rgba(0, 0, 0, 0.7); 
-}
-
-#contact {
-    background: rgba(0, 0, 0, 0.7); 
-}
-
 footer {
-    background: rgba(33, 33, 33, 0.8);
-    color: white;
+    background-color: var(--background-color); 
+    color: var(--text-color);
     text-align: center;
     padding: 20px;
     position: relative;
     bottom: 0;
     width: 100%;
 }
+
+.about_del {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: left;
+    width: 100%;
+    max-width: 1200px; 
+    margin-left: 180px; 
+    margin-top: 50px;
+    padding: 20px;
+}
+
+.img {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    margin-right: 50px; 
+    border: 3px solid #6e446c; 
+}
+
+.details {
+    flex: 1; 
+}
+
+.details h3 {
+    margin-bottom: 20px;
+    font-size: 2.5em; 
+    font-weight: 700;
+}
+
+.details p {
+    margin: 10px 0;
+    font-size: 1.2em;
+}
+
+.details blockquote {
+    margin-top: 20px;
+    font-style: italic;
+    font-size: 1.3em;
+    color: #ccc; 
+}
+
+
+/*---------------------------------------- about over------------------------------------------------------ */
