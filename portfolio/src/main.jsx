@@ -1,6 +1,6 @@
 import { StrictMode } from 'react';
 import { createRoot } from 'react-dom/client';
-import PortfolioSady from './portfoliosady.jsx'; // Ensure the component name is capitalized
+import PortfolioSady from './portfoliosady.jsx'; 
 import './index.css';
 import './portfoliosady.css';
 

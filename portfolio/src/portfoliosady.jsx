@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import './portfoliosady.css'; // Ensure this CSS file contains the necessary styles
+import './portfoliosady.css'; 
 
 const skillsData = [
   { name: 'HTML', imgSrc: '/src/assets/html.png' },
@@ -104,7 +104,7 @@ const PortfolioSady = () => {
                   )}
                 </div>
               </div>
-              {/* Future projects can be added here */}
+              {/* Future projects */}
             </div>
           </section>
 

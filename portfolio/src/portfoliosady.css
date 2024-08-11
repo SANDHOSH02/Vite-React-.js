@@ -3,7 +3,7 @@
 :root {
     --background-color: #f4f4f9;
     --text-color: #333;
-    --highlight-color: #ff6f61; /* Update to a more visually appealing highlight color */
+    --highlight-color: #ff6f61; 
     --bar-background: #ddd;
     --bar-fill: #ff6f61;
     --bar-fill-hover: #137e73;
