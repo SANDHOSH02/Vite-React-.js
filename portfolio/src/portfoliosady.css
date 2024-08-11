@@ -1,5 +1,13 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Foldit:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --background-color: #f4f4f9;
+    --text-color: #333;
+    --highlight-color: #ff6f61; /* Update to a more visually appealing highlight color */
+    --bar-background: #ddd;
+    --bar-fill: #ff6f61;
+    --bar-fill-hover: #ff3b30;
+}
 
 body {
     font-family: "Exo 2", sans-serif;
@@ -11,23 +19,13 @@ body {
     transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-
-body.dark-theme {
-    --background-color: #000000;
-    --text-color: white;
-}
-
-body.light-theme {
-    --background-color: #ffffff;
-    --text-color: black;
-}
-
 header {
     position: fixed;
     width: 100%;
     padding: 20px 0;
     text-align: center;
     z-index: 1000;
+    background: var(--background-color);
 }
 
 header nav ul {
@@ -50,7 +48,7 @@ header nav ul li a {
 }
 
 header nav ul li a:hover {
-    color: orangered; 
+    color: var(--highlight-color); 
 }
 
 .intro {
@@ -79,7 +77,7 @@ header nav ul li a:hover {
     padding: 100px 20px;
     min-height: 100vh;
     background-color: var(--background-color);
-    border-bottom: 1px solid #333; 
+    border-bottom: 1px solid #ddd; 
 }
 
 footer {
@@ -99,8 +97,7 @@ footer {
     text-align: left;
     width: 100%;
     max-width: 1200px; 
-    margin-left: 180px; 
-    margin-top: 50px;
+    margin: 50px auto; 
     padding: 20px;
 }
 
@@ -131,8 +128,155 @@ footer {
     margin-top: 20px;
     font-style: italic;
     font-size: 1.3em;
-    color: #ccc; 
+    color: #666; 
 }
 
+/* Skills section styling */
 
-/*---------------------------------------- about over------------------------------------------------------ */
+/* Existing styles */
+
+.skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+  }
+  
+  .skill-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    width: 150px;   
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .skill-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .skill-img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    margin-bottom: 10px;
+  }
+  
+  .skill-name {
+    font-size: 1.1em;
+    font-weight: bold;
+    color: var(--text-color);
+  }
+ 
+
+
+h1 {
+    text-align: center;
+    padding-bottom: 5px; 
+    margin-bottom: 20px; 
+  }
+  
+ /*  Projects  */
+ .projects-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center; 
+    padding: 20px;
+  }
+  
+  .chatbot {
+    display: flex;
+    align-items: flex-start; 
+    gap: 20px;
+    max-width: 600px;
+    width: 100%;
+    height: auto;
+    border: 2px solid #333;
+    padding: 20px;
+    box-sizing: border-box;
+    border-radius: 6px;
+    position: relative;
+    background-color: #fff;
+    margin-right: 550px;
+  }
+  
+  .project-img {
+    width: 150px;
+    height: auto;
+    border-radius: 10px;
+    margin-top: 120px;
+  }
+  
+  .project-description {
+    flex: 1;
+  }
+  
+  .project-description h2 {
+    font-size: 1.8em;
+    color: var(--text-color);
+    margin-bottom: 10px;
+  }
+  
+  .project-description p {
+    font-size: 1em;
+    line-height: 1.6;
+    color: #666;
+  }
+  
+  button {
+    margin-top: 20px; /* Adjusted margin for better spacing */
+    padding: 10px 15px;
+    font-size: 1em;
+    border: none;
+    border-radius: 5px;
+    background-color: var(--highlight-color);
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: var(--bar-fill-hover);
+  }
+  
+  .info-card {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    max-width: 400px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+  }
+  
+  .info-card-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+  }
+
+  .info-card a {
+    color: var(--highlight-color);
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .info-card a:hover {
+    text-decoration: underline;
+  }
+  
