@@ -29,7 +29,7 @@
 
 ## Contact
 
-For any inquiries, you can reach me at:
+For any inquiries, you can reach me at.
 
 - **Email:** sandhoshtechie02@gmail.com
 - **GitHub:** [SANDHOSH02](https://github.com/SANDHOSH02)
