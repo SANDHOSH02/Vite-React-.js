@@ -51,19 +51,41 @@ header nav ul li a:hover {
     color: var(--highlight-color); 
 }
 
+
+
+h1 {
+  font-size: 3em;
+  letter-spacing: 0.1em;
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: 0.15em solid #00ff00;
+  animation: blink-caret 0.75s step-end infinite;
+}
+
+@keyframes blink-caret {
+  50% {
+    border-color: transparent;
+  }
+}
+
+
+
+
+
+
+
+
 .intro {
     display: flex;
     align-items: center;
     justify-content: center;
     height: 100vh;
-    background-color: var(--background-color);
-    color: var(--text-color);
+    background-color: #000000;
+    color: white;
     text-align: center;
-    animation: fadeOut 3s forwards;
-    opacity: 1;
 }
 
-@keyframes fadeOut {
+/* @keyframes fadeOut {
     0% {
         opacity: 1;
     }
@@ -71,7 +93,7 @@ header nav ul li a:hover {
         opacity: 0;
         visibility: hidden;
     }
-}
+} */
 
 .section {
     padding: 100px 20px;
@@ -386,3 +408,4 @@ h1 {
   text-align: center;
   margin-top: 100px;
 }
+
