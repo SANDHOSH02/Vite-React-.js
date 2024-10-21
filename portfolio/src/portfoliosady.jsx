@@ -70,6 +70,8 @@
       <>
         {showIntro ? (
           <div id="intro" className="intro">
+            <section1>
+            </section1> 
             <h1 id="code-text">WELCOME TO MY PORTFOLIO.....</h1> 
           </div>
         ) : (
