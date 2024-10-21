@@ -190,7 +190,7 @@ footer {
   .skill-name {
     font-size: 1.1em;
     font-weight: bold;
-    color: var(--text-color);
+    color: black;
   }
  
 
@@ -224,6 +224,7 @@ h1 {
     position: relative;
     background-color: #fff;
     margin-right: 550px;
+    color: #000000 !important; 
   }
   
   .project-img {

@@ -24,7 +24,7 @@
 
     useEffect(() => {
       if (codeAnimationCompleted) {
-        const timer = setTimeout(() => setShowIntro(false), 2000); // 2 seconds delay after code animation ends
+        const timer = setTimeout(() => setShowIntro(false), 2000); 
         return () => clearTimeout(timer);
       }
     }, [codeAnimationCompleted]);
@@ -55,10 +55,10 @@
 
           if (index >= originalText.length) {
             clearInterval(interval);
-            setCodeAnimationCompleted(true); // Mark animation as completed
+            setCodeAnimationCompleted(true); 
           }
 
-          index += 1 / 3; // Speed adjustment for deciphering
+          index += 1 / 3; 
         };
 
         interval = setInterval(codeCrackEffect, 30);
@@ -70,7 +70,7 @@
       <>
         {showIntro ? (
           <div id="intro" className="intro">
-            <h1 id="code-text">WELCOME TO MY PORTFOLIO.....</h1> {/* Added for effect */}
+            <h1 id="code-text">WELCOME TO MY PORTFOLIO.....</h1> 
           </div>
         ) : (
           <>
@@ -125,7 +125,7 @@
                 <div className='chatbot'>
                   <img className='project-img' src='/src/assets/chatbot.png' alt='Chatbot' />
                   <div className='project-description'>
-                    <h2>Chatbot</h2>
+                    <h2>Chatbot  </h2>
                     <p>This is a chatbot application developed using the OpenAI API...</p>
                     <button onClick={() => setShowCard(!showCard)}>
                       How to Make
@@ -141,8 +141,12 @@
                     )}
                   </div>
                 </div>
+                
               </div>
             </section>
+
+
+            
 
             <section id="resume" className="section resume-section">
               <h1>Resume</h1>
