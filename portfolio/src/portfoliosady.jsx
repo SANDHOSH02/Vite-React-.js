@@ -145,6 +145,27 @@
                     )}
                   </div>
                 </div>
+                <div className='chatbot'>
+                  <img className='project-img' src='/src/assets/download.jpeg' alt='learning' />
+                  <div className='project-description'>
+                    <h2>Personalized-Learning-Platform  </h2>
+                    <p>The Personalized Learning Platform is an AI-driven educational tool designed to tailor learning experiences for individual users.</p>
+                    <button onClick={() => setShowCard(!showCard)}>
+                      How to Make
+                    </button>
+                    {showCard && (
+                      <>
+                        <div className='info-card-overlay' onClick={() => setShowCard(false)}></div>
+                        <div className='info-card'>
+                          <h3>How to Make the Personalized-Learning-Platform</h3>
+                          <p>
+                          </p>
+                          <a target='/' href='https://community.openai.com/t/how-to-generate-openai-api-key/401363'>OPEN AI API SITE LINK</a>
+                        </div>
+                      </>
+                    )}
+                  </div>
+                </div>
                 
               </div>
             </section>
