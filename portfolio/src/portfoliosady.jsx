@@ -137,7 +137,9 @@
                         <div className='info-card-overlay' onClick={() => setShowCard(false)}></div>
                         <div className='info-card'>
                           <h3>How to Make the Chatbot</h3>
-                          <p>To create this chatbot, we used the OpenAI API...</p>
+                          <p>To create this chatbot, we used the OpenAI API key to access data, and we coded it in Python. When a user asks a question, the chatbot provides an answer for any query. Our innovation is that while the current model can only respond with text, we implemented a feature where the answer is given both in text and voice, making it easier for the user to understand.
+                          </p>
+                          <a target='/' href='https://community.openai.com/t/how-to-generate-openai-api-key/401363'>OPEN AI API SITE LINK</a>
                         </div>
                       </>
                     )}

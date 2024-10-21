@@ -49,6 +49,7 @@ header nav ul li a {
 
 header nav ul li a:hover {
     color: var(--highlight-color); 
+    
 }
 
 
@@ -387,6 +388,7 @@ body {
   background-color: var(--background-color);
   color: var(--text-color);
   transition: background-color 0.3s, color 0.3s;
+  
 }
 
 .toggle-button {
